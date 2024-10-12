@@ -1,4 +1,4 @@
-body{
+body {
     background: linear-gradient(to bottom, #7e1037, #c14e77);
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@ body{
     align-items: center;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +18,7 @@ body{
     margin: 0 auto;
 }
 
-.row-set{
+.row-set {
     width: 65%;
     border-radius: 55%;
     background-color: rgba(255, 255, 255, 0.226);
@@ -27,11 +27,20 @@ body{
     align-items: center;
     flex-direction: row;
     height: auto;
+    gap: 20px; /* Espaçamento igual entre os elementos */
+    padding: 20px; /* Adicionando um pouco de padding para os lados */
 }
 
-#content {
-    padding: 10px;
-    margin: 2px;
+img {
+    border-radius: 25%;
+    object-fit: contain;
+    width: 120px;
+    height: 120px;
+}
+
+.content-item {
+    text-align: center;
+    flex: 1; /* Para que todos os itens cresçam igualmente */
 }
 
 /* Estilos responsivos para tablets (tela entre 600px e 1024px) */
@@ -39,11 +48,6 @@ body{
     .row-set {
         width: 85%;
         border-radius: 20%;
-    }
-    
-    #content {
-        padding: 8px;
-        margin: 4px;
     }
 }
 
@@ -53,10 +57,5 @@ body{
         width: 95%;
         border-radius: 15%;
         flex-direction: column; /* Colocar os elementos em coluna em telas pequenas */
-    }
-    
-    #content {
-        padding: 6px;
-        margin: 6px;
     }
 }
