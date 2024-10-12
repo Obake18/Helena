@@ -2,9 +2,13 @@
 const data = [
     { text: "A melhor forma de começar é com uma imagem coquette! :D \n Todos os itens da sua wishlist irão se realizar! tenha fé!", imgSrc: "./imagens/foto1.jpeg" },
     { text: "Para a minha Princesa dos Mares. <3", imgSrc: "./imagens/foto2.jpeg" },
-    { text: "Que seu dia seja repleto de alegria e amor!", imgSrc: "./imagens/foto3.jpeg" },
-    { text: "Você é a melhor irmã do mundo, te amo!", imgSrc: "./imagens/foto4.jpeg" },
-    { text: "Espero que seu novo ano seja cheio de conquistas!", imgSrc: "./imagens/foto5.jpeg" }
+    { text: "Um dos seus jogos favoritos, com a personagem que é a sua cara. <3", imgSrc: "./imagens/foto3.jpeg" },
+    { text: "O seu primeiro anime shoujo!", imgSrc: "./imagens/foto4.jpeg" },
+    { text: "Gatitos(Não poderia faltar né)", imgSrc: "./imagens/foto5.jpeg" },
+    { text: "Um dos filmes que você mais gostou!", imgSrc: "./imagens/foto6.jpeg" },
+    { text: "A sua subcultura!", imgSrc: "./imagens/foto7.jpeg" },
+    { text: "U.U", imgSrc: "./imagens/foto8.jpeg" },
+    { text: "Seu marido!", imgSrc: "./imagens/foto9.jpeg},"},
 ];
 
 // Seleciona o contêiner onde o conteúdo será adicionado
