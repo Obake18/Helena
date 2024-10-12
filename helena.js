@@ -1,10 +1,10 @@
 // Array de dados com as imagens e textos personalizados para o aniversário
 const data = [
-    { text: "Feliz aniversário, minha irmã querida!", imgSrc: "imagens/foto1.jpg" },
-    { text: "Lembre-se de todos os momentos incríveis que já vivemos!", imgSrc: "imagens/foto2.jpg" },
-    { text: "Que seu dia seja repleto de alegria e amor!", imgSrc: "imagens/foto3.jpg" },
-    { text: "Você é a melhor irmã do mundo, te amo!", imgSrc: "imagens/foto4.jpg" },
-    { text: "Espero que seu novo ano seja cheio de conquistas!", imgSrc: "imagens/foto5.jpg" }
+    { text: "Feliz aniversário, minha irmã querida!", imgSrc: "./imagens/foto1.jpeg" },
+    { text: "Lembre-se de todos os momentos incríveis que já vivemos!", imgSrc: "./imagens/foto2.jpeg" },
+    { text: "Que seu dia seja repleto de alegria e amor!", imgSrc: "./imagens/foto3.jpeg" },
+    { text: "Você é a melhor irmã do mundo, te amo!", imgSrc: "./imagens/foto4.jpeg" },
+    { text: "Espero que seu novo ano seja cheio de conquistas!", imgSrc: "./imagens/foto5.jpeg" }
 ];
 
 // Seleciona o contêiner onde o conteúdo será adicionado
@@ -23,7 +23,7 @@ data.forEach(item => {
     // Cria um elemento de imagem
     const imgElement = document.createElement('img');
     imgElement.src = item.imgSrc; // Define a URL da imagem local
-    imgElement.alt = item.text;   // Adiciona um texto alternativo para acessibilidade
+
 
     // Adiciona o texto e a imagem dentro do div criado
     contentDiv.appendChild(textElement);
