@@ -1,0 +1,86 @@
+body {
+    background: linear-gradient(to bottom, #7e1037, #c14e77);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; /* Fonte padrão para a página */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%; /* Largura máxima do container */
+    max-width: 800px; /* Tamanho máximo do container */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para o container */
+}
+
+h1 {
+    color: #5d1f2b; /* Cor do título */
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+p {
+    color: #333; /* Cor do texto */
+    margin: 10px 0; /* Margem vertical */
+    text-align: center; /* Centralizar texto */
+}
+
+img {
+    border-radius: 10px; /* Borda arredondada para a imagem */
+    object-fit: cover; /* Cobrir a área da imagem */
+    width: 100%; /* Largura total */
+    max-width: 300px; /* Largura máxima da imagem */
+    height: auto; /* Altura automática */
+    margin: 15px 0; /* Margem vertical para a imagem */
+}
+
+button {
+    background-color: #c14e77; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remover borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+button:hover {
+    background-color: #a83d60; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilos responsivos para tablets (tela entre 600px e 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        width: 95%; /* Largura um pouco menor em tablets */
+    }
+}
+
+/* Estilos responsivos para celulares (tela menor que 600px) */
+@media (max-width: 600px) {
+    .container {
+        width: 100%; /* Largura máxima para celulares */
+        padding: 15px; /* Espaçamento interno reduzido */
+    }
+
+    h1 {
+        font-size: 24px; /* Reduzir o tamanho da fonte do título em celulares */
+    }
+
+    p {
+        font-size: 14px; /* Reduzir o tamanho da fonte do parágrafo em celulares */
+    }
+
+    button {
+        font-size: 14px; /* Tamanho da fonte do botão reduzido em celulares */
+    }
+}

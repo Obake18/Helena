@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes do Card</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Feliz Aniversário Helena!</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Inclua seu CSS -->
 </head>
 <body>
     <div class="container">
         <h1 id="card-title"></h1>
         <p id="card-description"></p>
         <img id="card-image" src="" alt="">
+        <p id="card-details"></p> <!-- Para exibir os detalhes adicionais -->
         <button onclick="goBack()">Voltar</button>
     </div>
 
@@ -35,6 +36,7 @@
             document.getElementById('card-title').innerText = params.title || 'Título não disponível';
             document.getElementById('card-description').innerText = params.description || 'Descrição não disponível';
             document.getElementById('card-image').src = params.image || 'default.jpg'; // Imagem padrão se não houver
+            document.getElementById('card-details').innerText = params.details || 'Detalhes não disponíveis'; // Exibe detalhes adicionais
         }
 
         function goBack() {
