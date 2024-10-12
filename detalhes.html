@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="card-title"></h1>
+        <p id="card-description"></p>
+        <img id="card-image" src="" alt="">
+        <button onclick="goBack()">Voltar</button>
+    </div>
+
+    <script>
+        // Função para obter os parâmetros da URL
+        function getQueryParams() {
+            const params = {};
+            const queryString = window.location.search.substring(1);
+            const queryArray = queryString.split("&");
+
+            queryArray.forEach(param => {
+                const [key, value] = param.split("=");
+                params[decodeURIComponent(key)] = decodeURIComponent(value);
+            });
+
+            return params;
+        }
+
+        // Função para carregar os detalhes na página
+        function loadDetails() {
+            const params = getQueryParams();
+            document.getElementById('card-title').innerText = params.title || 'Título não disponível';
+            document.getElementById('card-description').innerText = params.description || 'Descrição não disponível';
+            document.getElementById('card-image').src = params.image || 'default.jpg'; // Imagem padrão se não houver
+        }
+
+        function goBack() {
+            window.history.back(); // Volta para a página anterior
+        }
+
+        // Carrega os detalhes ao iniciar a página
+        loadDetails();
+    </script>
+</body>
+</html>

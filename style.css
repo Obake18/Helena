@@ -14,21 +14,29 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
 .row-set {
-    width: 65%;
-    border-radius: 55%;
-    background-color: rgba(255, 255, 255, 0.226);
+    width: 100%; /* Usar 100% para preencher o espaço disponível */
+    max-width: 800px; /* Define um tamanho máximo para o container */
+    background-color: rgba(255, 182, 193, 0.8); /* Cor de fundo rosa para a prateleira */
+    border-radius: 10px; /* Borda arredondada */
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* Distribuir espaço igual entre os elementos */
     align-items: center;
-    flex-direction: row;
-    height: auto;
-    gap: 20px; /* Espaçamento igual entre os elementos */
-    padding: 20px; /* Adicionando um pouco de padding para os lados */
+    padding: 20px;
+    flex-wrap: wrap; /* Permitir que os cards quebrem em várias linhas, se necessário */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.6); /* Fundo branco com transparência para o card */
+    border-radius: 10px; /* Arredondar os cantos do card */
+    padding: 15px; /* Espaçamento interno */
+    text-align: center; /* Centralizar o texto */
+    flex: 1 1 200px; /* Permitir que os cards cresçam e diminuam, com um tamanho base de 200px */
+    margin: 10px; /* Espaçamento entre os cards */
 }
 
 img {
@@ -38,24 +46,17 @@ img {
     height: 120px;
 }
 
-.content-item {
-    text-align: center;
-    flex: 1; /* Para que todos os itens cresçam igualmente */
-}
-
 /* Estilos responsivos para tablets (tela entre 600px e 1024px) */
 @media (max-width: 1024px) {
     .row-set {
-        width: 85%;
-        border-radius: 20%;
+        width: 90%; /* Largura um pouco menor em tablets */
     }
 }
 
 /* Estilos responsivos para celulares (tela menor que 600px) */
 @media (max-width: 600px) {
     .row-set {
-        width: 95%;
-        border-radius: 15%;
+        width: 95%; /* Largura máxima para celulares */
         flex-direction: column; /* Colocar os elementos em coluna em telas pequenas */
     }
 }
