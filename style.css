@@ -1,4 +1,8 @@
+/* Importando a fonte Parisienne */
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
 body {
+    font-family: 'Parisienne', cursive; /* Fonte coquette */
     background: linear-gradient(to bottom, #7e1037, #c14e77);
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,6 +11,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: fadeInBackground 2s ease-in-out; /* Animação de entrada do fundo */
+}
+
+/* Animação para fundo */
+@keyframes fadeInBackground {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .container {
@@ -16,6 +27,13 @@ body {
     flex-direction: column;
     width: 80%;
     margin: 0 auto;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animação suave para aparecer cada container */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .row-set {
@@ -37,6 +55,15 @@ body {
     text-align: center; /* Centralizar o texto */
     flex: 1 1 200px; /* Permitir que os cards cresçam e diminuam, com um tamanho base de 200px */
     margin: 10px; /* Espaçamento entre os cards */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInCard 1.5s ease-in-out forwards;
+}
+
+/* Animação suave de fade-in para os cards */
+@keyframes fadeInCard {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 img {
@@ -44,6 +71,13 @@ img {
     object-fit: cover;
     width: 120px;
     height: 120px;
+    animation: fadeInImage 2s ease-in-out; /* Animação para imagens */
+}
+
+/* Animação suave para as imagens */
+@keyframes fadeInImage {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
 }
 
 /* Estilos responsivos para tablets (tela entre 600px e 1024px) */
@@ -58,5 +92,10 @@ img {
     .row-set {
         width: 95%; /* Largura máxima para celulares */
         flex-direction: column; /* Colocar os elementos em coluna em telas pequenas */
+    }
+
+    img {
+        width: 100px; /* Reduz o tamanho das imagens para telas pequenas */
+        height: 100px;
     }
 }

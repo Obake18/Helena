@@ -1,3 +1,6 @@
+/* Importando a fonte Parisienne */
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
 body {
     background: linear-gradient(to bottom, #7e1037, #c14e77);
     background-size: cover;
@@ -5,9 +8,17 @@ body {
     min-height: 100vh;
     margin: 0;
     display: flex;
+    font-weight: bold;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif; /* Fonte padrão para a página */
+    font-family: 'Parisienne', cursive; /* Fonte personalizada Parisienne */
+    animation: fadeInBackground 2s ease-in-out; /* Animação de fundo */
+}
+
+/* Animação para o fundo aparecer */
+@keyframes fadeInBackground {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .container {
@@ -15,23 +26,44 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90%; /* Largura máxima do container */
-    max-width: 800px; /* Tamanho máximo do container */
+    width: 80%; /* Largura máxima do container */
+    max-width: 300px; /* Tamanho máximo do container */
     background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
     border-radius: 10px; /* Bordas arredondadas */
     padding: 20px; /* Espaçamento interno */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para o container */
+    animation: fadeInContainer 1.5s ease-in-out; /* Animação suave */
+}
+
+/* Animação suave para o container */
+@keyframes fadeInContainer {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 h1 {
     color: #5d1f2b; /* Cor do título */
     margin-bottom: 10px; /* Margem inferior */
+    animation: fadeInTitle 1s ease-in-out; /* Animação do título */
+}
+
+/* Animação suave para o título */
+@keyframes fadeInTitle {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 p {
-    color: #333; /* Cor do texto */
+    color: #000000; /* Cor do texto */
     margin: 10px 0; /* Margem vertical */
     text-align: center; /* Centralizar texto */
+    animation: fadeInText 1.3s ease-in-out; /* Animação suave para o texto */
+}
+
+/* Animação suave para o texto */
+@keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 img {
@@ -41,6 +73,13 @@ img {
     max-width: 300px; /* Largura máxima da imagem */
     height: auto; /* Altura automática */
     margin: 15px 0; /* Margem vertical para a imagem */
+    animation: fadeInImage 2s ease-in-out; /* Animação suave para imagens */
+}
+
+/* Animação suave para imagens */
+@keyframes fadeInImage {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
 }
 
 button {
@@ -51,7 +90,14 @@ button {
     padding: 10px 20px; /* Espaçamento interno */
     cursor: pointer; /* Cursor de mão ao passar o mouse */
     font-size: 16px; /* Tamanho da fonte */
-    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+    animation: fadeInButton 1.5s ease-in-out; /* Animação para o botão */
+}
+
+/* Animação suave para o botão */
+@keyframes fadeInButton {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 button:hover {
