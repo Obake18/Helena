@@ -45,6 +45,7 @@ body {
 }
 
 .row-set {
+    margin-top: 20px;
     width: 100%; /* Usar 100% para preencher o espaço disponível */
     max-width: 800px; /* Define um tamanho máximo para o container */
     background-color: rgba(255, 182, 193, 0.8); /* Cor de fundo rosa para a prateleira */
