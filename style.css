@@ -43,9 +43,16 @@ body {
     border-radius: 10px; /* Borda arredondada */
     display: flex;
     justify-content: space-around; /* Distribuir espaço igual entre os elementos */
-    align-items: center;
+    align-items: stretch; /* Alinhar os elementos com alturas iguais */
     padding: 20px;
     flex-wrap: wrap; /* Permitir que os cards quebrem em várias linhas, se necessário */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos nas dimensões */
+}
+
+/* Animação suave de fade-in para os cards */
+@keyframes fadeInCard {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .card {
@@ -58,12 +65,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInCard 1.5s ease-in-out forwards;
-}
-
-/* Animação suave de fade-in para os cards */
-@keyframes fadeInCard {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    box-sizing: border-box; /* Inclui padding e borda no cálculo de largura */
 }
 
 img {
@@ -83,19 +85,26 @@ img {
 /* Estilos responsivos para tablets (tela entre 600px e 1024px) */
 @media (max-width: 1024px) {
     .row-set {
-        width: 90%; /* Largura um pouco menor em tablets */
+        width: 90%;
     }
 }
 
 /* Estilos responsivos para celulares (tela menor que 600px) */
 @media (max-width: 600px) {
     .row-set {
-        width: 95%; /* Largura máxima para celulares */
-        flex-direction: column; /* Colocar os elementos em coluna em telas pequenas */
+        width: 95%;
+        flex-direction: column;
+        align-items: center; /* Centralizar os elementos em telas menores */
+    }
+
+    /* Força os cards a terem o mesmo tamanho em telas pequenas */
+    .card {
+        width: 80%;
+        max-width: 200px;
     }
 
     img {
-        width: 100px; /* Reduz o tamanho das imagens para telas pequenas */
+        width: 100px;
         height: 100px;
     }
 }
