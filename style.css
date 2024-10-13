@@ -14,6 +14,14 @@ body {
     animation: fadeInBackground 2s ease-in-out; /* Animação de entrada do fundo */
 }
 
+.logo {
+    margin-top: 20px;
+    width: 50px; /* Reduz o tamanho da logo */
+    height: 50px; /* Reduz o tamanho da logo */
+    object-fit: cover; /* Ajuste da imagem */
+    border-radius: 50%; /* Opcional: torna a logo circular */
+}
+
 /* Animação para fundo */
 @keyframes fadeInBackground {
     from { opacity: 0; }
