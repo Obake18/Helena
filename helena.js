@@ -1,23 +1,23 @@
 // Array de dados com as imagens e textos personalizados para o aniversário
 const data = [
     { 
-        text: "A melhor forma de começar é com uma imagem coquette! :D ", 
+        text: "A melhor forma de começar é com uma imagem coquette!", 
         details: "Todos os itens da sua wishlist irão se realizar! tenha fé!\nLembre-se de que cada desejo torna-se verdade, e que eu vou estar contigo quando isso acontecer.", 
         imgSrc: "./imagens/foto1.jpeg" 
     },
     { 
-        text: "Para a minha Princesa dos Mares. <3", 
+        text: "Para a minha Princesa dos Mares. ", 
         details: "Você é tão linda quanto a Mamare. E quem disser o contrário, que tome no centro do olho do c*", 
         imgSrc: "./imagens/foto2.jpeg" 
     },
     { 
-        text: "Um dos seus jogos favoritos, com a personagem que é a sua cara. <3", 
+        text: "Um dos seus jogos favoritos, com a personagem que é a sua cara. ", 
         details: "Por boas razões, ela me lembra você.", 
         imgSrc: "./imagens/foto3.jpeg" 
     },
     { 
         text: "O seu primeiro anime shoujo!", 
-        details: "Quase coloquei Sailor Moon aqui, mas realmente, é um anime muito rosa e fofo, combina contigo. <3", 
+        details: "Quase coloquei Sailor Moon aqui, mas realmente, é um anime muito rosa e fofo, combina contigo.", 
         imgSrc: "./imagens/foto4.jpeg" 
     },
     { 
