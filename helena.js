@@ -45,6 +45,11 @@ const data = [
         details: "Você ainda vai achar o seu Honrado!", 
         imgSrc: "./imagens/foto9.jpeg" 
     },
+    { 
+        text: "💌", 
+        details: "Um pequeno textinho para ti. 💌 \n Querida Leninha, minha irmãzinha, \nEu te amo muito, e este é o meu primeiro presente de aniversário para você. Por isso, achei interessante escrever um pequeno texto para você aqui neste site, que ficará online para sempre, assim como o meu amor por você. 💌\nEstamos longe um do outro, um mora na casa do chapéu, o outro na casa do caixa-prego, mas temos um bagulho astral que nos une e nos mantém em sinergia constante. Quero dedicar este texto a você, que é incrível simplesmente por ser quem você é. Você é única, especial e incomparável. E para qualquer um que diga o contrário: que vá tomar no olho do c*!", 
+        imgSrc: "./imagens/foto10.jpeg" 
+    },
 ];
 
 // Seleciona o contêiner onde o conteúdo será adicionado
