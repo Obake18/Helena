@@ -55,7 +55,7 @@ h1 {
 }
 
 p {
-    color: #000000; /* Cor do texto */
+    color: #4e0010; /* Cor do texto */
     margin: 10px 0; /* Margem vertical */
     text-align: center; /* Centralizar texto */
     animation: fadeInText 1.3s ease-in-out; /* Animação suave para o texto */

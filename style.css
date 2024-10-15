@@ -63,8 +63,11 @@ body {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
+p{
+    color: #4e0010;
+}
 .card {
+    
     background-color: rgba(255, 255, 255, 0.6); /* Fundo branco com transparência para o card */
     border-radius: 10px; /* Arredondar os cantos do card */
     padding: 15px; /* Espaçamento interno */
